@@ -9,8 +9,9 @@ export const addTodo = task => ({
   }
 });
 
-export const toggleTodo = () => ({
-  type: TOGGLE_TODO
+export const toggleTodo = id => ({
+  type: TOGGLE_TODO,
+  payload: id
 });
 
 export const clearCompleted = () => ({
